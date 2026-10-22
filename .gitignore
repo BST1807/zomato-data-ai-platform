@@ -1,0 +1,52 @@
+# ========================================================
+# Large Data Files (Avoid pushing multi-GB CSVs to GitHub)
+# ========================================================
+*.csv
+*.parquet
+
+# ========================================================
+# Credentials & Secrets (NEVER push credentials to Git!)
+# ========================================================
+.env
+*.env
+creds
+profiles.yml
+zomato/profiles.yml
+
+# ========================================================
+# Airflow & Docker
+# ========================================================
+airflow/logs/
+airflow/.env
+
+# ========================================================
+# dbt Build Artifacts & Logs
+# ========================================================
+target/
+dbt_packages/
+zomato/target/
+zomato/dbt_packages/
+zomato/logs/
+logs/
+*.log
+
+# ========================================================
+# Python & Virtual Environments
+# ========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+env/
+ENV/
+
+# ========================================================
+# OS & Editor Metadata
+# ========================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
